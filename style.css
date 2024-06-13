@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+
+.content {
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        rgb(153, 25, 36)0%,
+        rgb(68, 13, 22)70%
+    );
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #dedede;
+    display: block;
+    font-weight: bold;
+   
+}
+
+.menu .navbar ul li a:hover {
+    color: #362f2f;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+h1 {
+    position: absolute;
+    top: 350px;
+    left: 650px;
+    right:1000px;
+    bottom:2300;
+}
+
+
+footer {
+    background-color: #424242;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-icono {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+    .content{
+        min-height: 70px;
+    }
+
+    h1 {
+        position: absolute;
+        left: 0;
+    }
+
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            90deg,
+            rgb(153, 25, 36)0%,
+            rgb(68, 13, 22)70%
+        );
+    display: none;
+
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+} 
+
+header {
+
+    background-image: url('https://i0.wp.com/static.vecteezy.com/system/resources/previews/011/114/145/non_2x/red-and-white-business-background-blank-modern-background-with-dot-pattern-design-free-vector.jpg?ssl=1');
+    background-size: cover; /* Esto hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Esto centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+}
